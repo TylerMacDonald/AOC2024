@@ -22,6 +22,7 @@ function solve(part2){
 
 
 //parse(1,false);
-parse("input.txt",false);
+//parse("input.txt",false);
+parse("sample.txt",false);
 console.log(`Part 1: ${solve(false)}`);
 console.log(`Part 2: ${solve(true)}`);
