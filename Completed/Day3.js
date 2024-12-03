@@ -1,4 +1,4 @@
-const file = require("./utils/import");
+const file = require("../utils/import");
 const makeKey = (...args)=>{
     return JSON.stringify(args);
 };
@@ -17,7 +17,7 @@ function parse(text, part2){
 }
 
 function solve(part2){
-    let input = parse("input.txt",part2);
+    let input = parse("Completed/Day3input.txt",part2);
     let score = 0;
     let enabled=true;
     for(let i=0; i<input.length; i++){
@@ -35,7 +35,5 @@ function solve(part2){
     return score;
 }
 
-//parse("sample.txt",false);
-//console.log(parse(1,false))
 console.log(`Part 1: ${solve(false)}`);
 console.log(`Part 2: ${solve(true)}`);
