@@ -4,38 +4,28 @@ const makeKey = (...args)=>{
 };
 var lines = [];
 function parse(text, part2){
-    let levels = [];
     if(isNaN(text)){
         lines = file.getSample(text).trim();
     }else{
         lines = file.getInput(text).trim();
     }
-    if(part2){
-        return lines.match(/do\(\)|don't\(\)|mul(\()(-){0,1}(\d){1,3}(,)(-){0,1}(\d){1,3}(\))/g);
-    }
-    return lines.match(/mul(\()(-){0,1}(\d){1,3}(,)(-){0,1}(\d){1,3}(\))/g);
+
+    return lines;
+    lines = lines.split('\n');
+    return lines.map(row => row.split(''));
 }
 
 function solve(part2){
-    let input = parse("input.txt",part2);
-    let score = 0;
-    let enabled=true;
-    for(let i=0; i<input.length; i++){
-        if(input[i]=='do()'){
-            enabled=true;
-        }else if(input[i]==`don't()`){
-            enabled=false;
-        }else{
-            if(enabled){
-                let cur = input[i].split("mul(")[1].split(")")[0].split(",");
-                score+=(Number(cur[0])*Number(cur[1]))
-            }
-        }
+    let grid = parse("sample.txt",false);
+    let count = 0;
+    if(!part2){
+        count=0;
+
+        return count;
     }
-    return score;
+    return count;
 }
 
-//parse("sample.txt",false);
-//console.log(parse(1,false))
+
 console.log(`Part 1: ${solve(false)}`);
 console.log(`Part 2: ${solve(true)}`);
