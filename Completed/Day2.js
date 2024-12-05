@@ -54,31 +54,21 @@ function checkLevel(level){
 
 function solve(part2){
     let count = 0;
-    if(!part2){
-        for(let i=0; i<levels.length; i++){
-            let safe = checkLevel(levels[i])
-            console.log(i, levels[i], safe);
-            if(safe){
-                count++;
-            }
-        }
-    }else{
-        for(let i=0; i<levels.length; i++){
-            let level = levels[i];
-            let safe = checkLevel(level);
-            if(!safe){
-                for(let x=0; x<level.length; x++){
-                    let temp = [...level];
-                    temp.splice(x,1);
-                    if(checkLevel(temp)){
-                        safe = true;
-                        break;
-                    }
+    for(let i=0; i<levels.length; i++){
+        let level = levels[i];
+        let safe = checkLevel(level);
+        if(!safe && part2){
+            for(let x=0; x<level.length; x++){
+                let temp = [...level];
+                temp.splice(x,1);
+                if(checkLevel(temp)){
+                    safe = true;
+                    break;
                 }
             }
-            if(safe){
-                count++;
-            }
+        }
+        if(safe){
+            count++;
         }
     }
     return count;

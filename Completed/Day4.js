@@ -62,13 +62,11 @@ function solve(part2){
     //just check for the thing specifically for part 2... fuck directions.
     count=0;
     for(let j=1; j<grid.length-1; j++){
-        let cur=grid[j];
-        for(let i=1; i<cur.length-1; i++){
-            if(cur[i]=='A'){
-                if((grid[j-1][i+1]=='S' && grid[j+1][i-1]=='M') || (grid[j-1][i+1]=='M' && grid[j+1][i-1]=='S')){
-                    if((grid[j-1][i-1]=='S' && grid[j+1][i+1]=='M') || (grid[j-1][i-1]=='M' && grid[j+1][i+1]=='S')){
-                        count++;
-                    }
+        for(let i=1; i<grid[j].length-1; i++){
+            if(grid[j][i]=='A'){
+                if((    (grid[j-1][i+1]=='S' && grid[j+1][i-1]=='M') || (grid[j-1][i+1]=='M' && grid[j+1][i-1]=='S')) 
+                    && ((grid[j-1][i-1]=='S' && grid[j+1][i+1]=='M') || (grid[j-1][i-1]=='M' && grid[j+1][i+1]=='S'))){
+                    count++;
                 }
             }
         }

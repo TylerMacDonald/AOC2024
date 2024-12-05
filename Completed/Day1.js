@@ -38,7 +38,6 @@ function solve(part2){
     let sim = 0;
     for(let i=0; i<nums1.length; i++){
         let count = nums2.filter(num => num==nums1[i]).length || 0;
-        //console.log(nums1[i], count, count*nums1[i]);
         sim += (count*nums1[i]);
     }
     return sim;
