@@ -4,33 +4,27 @@ const makeKey = (...args)=>{
 };
 let filename = 'input.txt'
 var lines = [];
+let part2 = false;
 
-function parse(text, part2){
+function parse(text){
     if(isNaN(text)){
         lines = file.getSample(text).trim();
     }else{
         lines = file.getInput(text).trim();
     }
-    lines = lines.split('\n').map(ele=>ele.split(''));
+    lines = lines.split('\n');
+    //let values = lines.map(ele=>ele.split(': ')[0]).map(e=>Number(e));
+    //let nums = lines.map(ele=>ele.split(': ')[1].split(' ').map(e=>Number(e)));
     return lines;
 }
 
-const directions = [
-    [-1, 0],
-    [0, 1],
-    [1, 0],
-    [0, -1],
-];
-
-function solve(part2){
-    let results = parse(filename,part2);
-    for(let i=0; i<results.length; i++){
-        
+function solve(p2){
+    part2 = p2;
+    let res = parse(filename);
+    let ans = 0;
+    for(let i=0; i<res.length; i++){
     }
-    let ans2 = 0;
-    if(!part2)
-        return results.length;
-    return ans2;
+    return ans;
 }
 
 

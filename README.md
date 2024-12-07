@@ -1,8 +1,10 @@
 # AOC2024
+Day 7 I had to completely refactor between part 1 and 2... I can certainly see why people who did it correctly had no issues going between the parts. Unfortunately I do not and do not have my original for part 1 anymore.
 
     Scores 2024:
           --------Part 1---------          --------Part 2---------
         Day       Time    Rank  Score       Time    Rank  Score
+          7   00:21:39    3967      0   00:46:07    5510      0
           6   00:51:15    9047      0   01:31:17    5949      0
           5   00:09:24    1172      0   00:14:41     858      0
           4   00:10:34    1741      0   00:35:49    4329      0
