@@ -10,9 +10,13 @@ function evaluateLeftToRight(expression) {
     for (let i = 1; i < expression.length; i += 2) {
         let operator = expression[i];
         let number = expression[i + 1];
-        if (operator === '+') result += number;
-        else if (operator === '*') result *= number;
-        else if (operator === '||') result = parseInt(`${result}${number}`, 10);
+        if (operator === '+'){
+            result += number;
+        }else if (operator === '*'){
+            result *= number;
+        }else if (operator === '||'){
+            result = Number(''+result+number);
+        }
     }
     return result;
 }
