@@ -1,5 +1,6 @@
 # AOC2024
 Day 7: I had to completely refactor between part 1 and 2... I can certainly see why people who did it correctly had no issues going between the parts. Unfortunately I do not and do not have my original for part 1 anymore.
+
 Day 8: Started about 20 minutes late for this one. The solution I came up with for the first part needed to be pretty heavily modified. I was in a state where example worked but input didn't. Ended up having a problem with the way I added nodes that had > 2 frequencies in it.
 
     Scores 2024:
