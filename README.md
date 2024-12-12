@@ -9,9 +9,12 @@ Day 10: Solved Part 1 pretty quickly (For me at least), and Part 2 I had a simpl
 
 Day 11: Was a bit  late in starting part 1 (9 minutes ish), luckily in part 2 I immediately recognized the Momentization need and how to do it from previous years. So while I was slow coding it I didn't waste much time thinking about it.
 
+Day 12: Started a couple minutes late. Had so many issues with the side finding... I was inconsistent with my directions and a bunch of other finicy things.
+
     Scores 2024:
           --------Part 1---------          --------Part 2---------
         Day       Time    Rank  Score       Time    Rank  Score
+        12   00:42:16    4779      0   01:32:40    3302      0
         11   00:17:41    4830      0   00:25:03    1875      0
         10   00:12:13    1466      0   00:24:32    2906      0
          9   00:32:59    4155      0   01:47:26    5234      0
