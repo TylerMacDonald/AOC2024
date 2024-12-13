@@ -14,6 +14,7 @@ Day 12: Started a couple minutes late. Had so many issues with the side finding.
     Scores 2024:
           --------Part 1---------          --------Part 2---------
         Day       Time    Rank  Score       Time    Rank  Score
+        13   00:33:49    3711      0   00:51:27    2294      0
         12   00:42:16    4779      0   01:32:40    3302      0
         11   00:17:41    4830      0   00:25:03    1875      0
         10   00:12:13    1466      0   00:24:32    2906      0
