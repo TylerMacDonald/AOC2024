@@ -1,4 +1,4 @@
-const file = require("./utils/import");
+const file = require("../utils/import");
 const makeKey = (...args)=>{
     return JSON.stringify(args);;
 };
@@ -6,7 +6,7 @@ const getValues = (str)=>{
     return JSON.parse(str)[0];
 }
 
-var filename = 'input.txt'
+var filename = 'Completed/Day13Input.txt'
 var part2 = false;
 
 function parse(text){
