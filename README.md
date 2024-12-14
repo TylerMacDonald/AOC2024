@@ -11,9 +11,12 @@ Day 11: Was a bit  late in starting part 1 (9 minutes ish), luckily in part 2 I 
 
 Day 12: Started a couple minutes late. Had so many issues with the side finding... I was inconsistent with my directions and a bunch of other finicy things.
 
+Day 14: Took me longer then I would have liked for part 1. I had a few very silly that caused issues... for Part 2, I started by printing off every 10 cycles and looking for patterns. Quickly gave up on that approach. Decided to give it a shot with looking for every robot in a unique position and it just kind of worked out.
+
     Scores 2024:
           --------Part 1---------          --------Part 2---------
         Day       Time    Rank  Score       Time    Rank  Score
+        14   00:51:13    5489      0   01:33:40    4577      0
         13   00:33:49    3711      0   00:51:27    2294      0
         12   00:42:16    4779      0   01:32:40    3302      0
         11   00:17:41    4830      0   00:25:03    1875      0
