@@ -11,19 +11,14 @@ var part2 = false;
 
 function parse(text){
     let lines = file.getSample(text).trim();
-    lines = lines.split('\n');
-    for(let line of lines){
-    }
+    lines = lines.split('\n').map(ele=>ele.split(',').map(Number));
     return lines;
 }
 
 function solve(p2){
     part2 = p2
-    let lines = parse(filename);
-    let ans = 0;
-    for (let line of lines) {
-    }
-    return ans;
+    let input = parse(filename);
+    return input;
 }
 
 console.log(`Part 1: ${solve(false)}`);
