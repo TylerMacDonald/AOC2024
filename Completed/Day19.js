@@ -20,17 +20,17 @@ function parse(text){
 function checkTowel(towel, patterns) {
     let memo = {};
 
-    function recur(pos){
-        if (memo[pos] !== undefined) 
-            return memo[pos];
-        if (pos == towel.length) 
+    function findMatches(index){
+        if (memo[index] !== undefined) 
+            return memo[index];
+        if (index == towel.length) 
             return 1;
 
         let matches = [];
         for (let p of patterns) {
             let isMatch = true;
             for (let i = 0; i < p.length; i++) {
-                if (towel[pos + i] === undefined || towel[pos + i] !== p[i]) {
+                if (towel[index + i] === undefined || towel[index + i] !== p[i]) {
                     isMatch = false;
                     break;
                 }
@@ -41,13 +41,13 @@ function checkTowel(towel, patterns) {
         }
         let res = 0;
         for (let match of matches) {
-            res += recur(pos + match.length);
+            res += findMatches(index + match.length);
         }
-        memo[pos] = res;
+        memo[index] = res;
         return res;
     }
 
-    return recur(0);
+    return findMatches(0);
 }
 
 function solve(p2){
