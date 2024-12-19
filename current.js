@@ -5,20 +5,26 @@ const makeKey = (...args)=>{
 const getValues = (str)=>{
     return JSON.parse(str)[0];
 }
-
-var filename = 'input.txt'
+let sum = 0;
+var file = file.getSample('sample.txt');
 var part2 = false;
+var results = {};
 
-function parse(text){
-    let lines = file.getSample(text).trim();
-    lines = lines.split('\n').map(ele=>ele.split(',').map(Number));
+
+function parse(){
+    let lines = file.trim();
+    lines = lines.split('\n');
     return lines;
 }
 
 function solve(p2){
     part2 = p2
-    let input = parse(filename);
-    return input;
+    let input = parse();
+    let count = 0;
+    for(let i=0; i<input.length; i++){
+        count++;
+    }
+    return count;
 }
 
 console.log(`Part 1: ${solve(false)}`);
